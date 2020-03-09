@@ -1,0 +1,67 @@
+:root{
+    --navColor: gray;
+    --navHeight:56px;
+    --navPadding:16px;
+    --navtxtColor:pink;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    padding: 0;
+    background-color: var(--navColor);
+    height: var(--navHeight);
+}
+
+.navwrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 5fr 2fr;
+    padding: 0 var(--navPadding);
+    height: var(--navHeight);
+}
+
+.menubt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 16px 0 0;
+    background-color: var(--navtxtColor);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navtxtColor);
+}
+
+ .searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    background-color: var(--navtxtColor);
+ }
+ 
+.navbtswrap{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+ .navbts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--navtxtColor);
+    width: 90%;
+    height: 100%;
+ }
+
+ .navbt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+ }
