@@ -1,0 +1,55 @@
+:root{
+    --navColor: gray;
+    --navHeight:8vh;
+    --navPadding:16px;
+    --navtxtColor:pink;
+    --navbtsColor: pink;
+    --navbtColor:purple;
+
+    --sidebarColor: beige;
+    --sb_iconColor: yellow;
+    --sb_txtColor: orange;
+}
+main{
+    padding-top: var(--navHeight);
+}
+
+iframe{
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: fixed;
+    width: 20%;
+
+}
+
+.sidebar{
+    background-color: var(--sidebarColor);
+    padding-top: 10px;
+    height: 92vh;
+}
+
+.hover{
+    height: 45px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.hover:hover{
+    background-color: gray;
+}
+
+.sb_icon{
+    background-color: var(--sb_iconColor);
+}
+
+.sb_txt{
+    height: 45px;
+    background-color: var(--sb_txtColor);
+}
+
+.nohover{
+    height: 45px;
+    margin-left: 10px;
+}

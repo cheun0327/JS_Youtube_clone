@@ -1,0 +1,8 @@
+:root{
+    --contentColor: rgb(174, 174, 247);
+}
+.contents{
+    height: 100vh - var(--navHeight);
+    padding-left: 20%;
+    background-color: skyblue;
+}

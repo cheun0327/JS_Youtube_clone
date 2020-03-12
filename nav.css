@@ -3,6 +3,8 @@
     --navHeight:56px;
     --navPadding:16px;
     --navtxtColor:pink;
+    --navbtsColor: pink;
+    --navbtColor:purple;
 }
 
 body{
@@ -14,27 +16,27 @@ nav{
     padding: 0;
     background-color: var(--navColor);
     height: var(--navHeight);
+    width: 100vw;
+    position: fixed;
 }
 
 .navwrap{
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 5fr 2fr;
+    grid-template-columns: 0.5fr 1fr 5fr 2fr;
     padding: 0 var(--navPadding);
     height: var(--navHeight);
 }
 
 .menubt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     margin: 0 16px 0 0;
     background-color: var(--navtxtColor);
 }
 
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     background-color: var(--navtxtColor);
 }
 
@@ -54,7 +56,7 @@ nav{
  .navbts{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: var(--navtxtColor);
+    background-color: var(--navbtsColor);
     width: 90%;
     height: 100%;
  }
@@ -64,4 +66,8 @@ nav{
     justify-content: center;
     align-items: center;
     margin-right: 8px;
+    background-color: var(--navbtColor);
+ }
+ .navbt:last-child{
+    margin-right: 0;
  }
