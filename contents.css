@@ -1,8 +1,67 @@
 :root{
     --contentColor: rgb(174, 174, 247);
+    --v-thumb-maxHeight: 
 }
+
+@custom-media :--lg-size (max-width:80vw);
+@custom-media :--md-size ();
+
+@custom-selector :--video-etc .poster, .views, .post_time;
+/*왜 안먹을까*/
+
 .contents{
     height: 100vh - var(--navHeight);
     padding-left: 20%;
-    background-color: skyblue;
+    background-color: mediumaquamarine;
+    margin: 0;
+    overflow: hidden;
+}
+
+.custom_txt{
+    padding: 36px 0 0 24px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.custom_video{
+    margin: 24px 24px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.video{
+    margin: 0 8px 40px;
+}
+.video_thumb{
+    background-color: aquamarine;
+    height: 150px;
+}
+.video_detail{
+    background-color: antiquewhite;
+    padding: 0 24px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.profile_img{
+    margin: 12px 12px 0 0;
+}
+.profile_img img{
+    width: 40px;
+}
+.video_etc{
+    display: grid;
+    grid-template-columns: min-content repeate(4, 1fr);
+}
+.title{
+    margin: 12px 0 10px;
+    grid-column: 1/5;
+    grid-row: 1/3;
+    background-color: aquamarine;
+}
+.poster{
+    grid-column: 1/5;
+}
+
+.poster, .views, .post_time{
+    font-size: small;
+    color: gray;
 }
