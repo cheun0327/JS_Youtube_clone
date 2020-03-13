@@ -4,7 +4,7 @@
     --navPadding:16px;
     --navtxtColor:pink;
     --navbtsColor: pink;
-    --navbtColor:purple;
+    --navbtColor:pink;
 }
 
 body{
@@ -23,7 +23,7 @@ nav{
 
 .navwrap{
     display: grid;
-    grid-template-columns: 0.5fr 1fr 5fr 2fr;
+    grid-template-columns: 0.5fr 1fr 5fr 1fr;
     padding: 0 var(--navPadding);
     height: var(--navHeight);
 }
@@ -42,11 +42,16 @@ nav{
 }
 
  .searchbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 10fr repeat(2, 1fr);
     margin: 0 40px;
+    padding: 0 50px;
+    place-content: center;
     background-color: var(--navtxtColor);
+ }
+
+ .keyboard, .searchicon{
+     place-self: flex-end;
  }
  
 .navbtswrap{

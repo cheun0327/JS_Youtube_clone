@@ -3,10 +3,12 @@
     --v-thumb-maxHeight: 
 }
 
-@custom-media :--lg-size (max-width:80vw);
-@custom-media :--md-size ();
+@custom-media --lg-size (max-width:80vw);
+@custom-media --md-size (max-width:70vw);
+@custom-media --sm-sixe (max-width:50vw);
+@custom-media --xs-sixe (max-width:45vw);
 
-@custom-selector :--video-etc .poster, .views, .post_time;
+@custom-selector --video-etc .poster, .views, .post_time;
 /*왜 안먹을까*/
 
 .contents{
@@ -49,7 +51,7 @@
 }
 .video_etc{
     display: grid;
-    grid-template-columns: min-content repeate(4, 1fr);
+    grid-template-columns: repeate(4, 1fr);
 }
 .title{
     margin: 12px 0 10px;
@@ -64,4 +66,11 @@
 .poster, .views, .post_time{
     font-size: small;
     color: gray;
+}
+
+
+@media(--md-size){
+    .custom_video{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
